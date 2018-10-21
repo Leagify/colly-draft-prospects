@@ -2,6 +2,7 @@ package main
 
 import (
 	"encoding/csv"
+	"fmt"
 	"log"
 	"os"
 	"time"
@@ -31,6 +32,115 @@ func main() {
 		colly.AllowedDomains("www.drafttek.com"),
 	)
 
+	// Categories: Rk,Chg,Player,College,P1,Ht,Wt,P2,Dif,BIO,SCT
+	categories := [11]string{"Rk", "Chg", "Player", "College", "P1", "Ht", "Wt", "P2", "Dif", "BIO", "SCT"}
+
+	// I'm getting some garbage data at the beginning of the table rows, as it appears that there are multiple tables.
+	// I need to either figure out a way to ignore the first table or ignore input until the text matches one of the category headers above.
+
+	//verify if the category has been reached.
+	categoryReached := false
+	c.OnHTML("tr td:nth-of-type(1)", func(e *colly.HTMLElement) {
+		for _, y := range categories {
+			if e.Text == y {
+				categoryReached = true
+			}
+		}
+		if categoryReached {
+			fmt.Println("Rank:", e.Text)
+		}
+	})
+
+	categoryReached = false
+	c.OnHTML("tr td:nth-of-type(2)", func(e *colly.HTMLElement) {
+		for _, y := range categories {
+			if e.Text == y {
+				categoryReached = true
+			}
+		}
+		if categoryReached {
+			fmt.Println("Change:", e.Text)
+		}
+	})
+
+	categoryReached = false
+	c.OnHTML("tr td:nth-of-type(3)", func(e *colly.HTMLElement) {
+		for _, y := range categories {
+			if e.Text == y {
+				categoryReached = true
+			}
+		}
+		if categoryReached {
+			fmt.Println("Name:", e.Text)
+		}
+	})
+
+	categoryReached = false
+	c.OnHTML("tr td:nth-of-type(4)", func(e *colly.HTMLElement) {
+		for _, y := range categories {
+			if e.Text == y {
+				categoryReached = true
+			}
+		}
+		if categoryReached {
+			fmt.Println("School:", e.Text)
+		}
+	})
+
+	categoryReached = false
+	c.OnHTML("tr td:nth-of-type(5)", func(e *colly.HTMLElement) {
+		for _, y := range categories {
+			if e.Text == y {
+				categoryReached = true
+			}
+		}
+		if categoryReached {
+			fmt.Println("Position:", e.Text)
+		}
+	})
+
+	categoryReached = false
+	c.OnHTML("tr td:nth-of-type(6)", func(e *colly.HTMLElement) {
+		for _, y := range categories {
+			if e.Text == y {
+				categoryReached = true
+			}
+		}
+		if categoryReached {
+			fmt.Println("Height:", e.Text)
+		}
+	})
+
+	categoryReached = false
+	c.OnHTML("tr td:nth-of-type(7)", func(e *colly.HTMLElement) {
+		for _, y := range categories {
+			if e.Text == y {
+				categoryReached = true
+			}
+		}
+		if categoryReached {
+			fmt.Println("Weight:", e.Text)
+		}
+	})
+
+	categoryReached = false
+	c.OnHTML("tr td:nth-of-type(8)", func(e *colly.HTMLElement) {
+		for _, y := range categories {
+			if e.Text == y {
+				categoryReached = true
+			}
+		}
+		if categoryReached {
+			fmt.Println("Alternate position:", e.Text)
+		}
+	})
+
+	// There's a div called "calloutwifnba" and the date. I can't seem to access it yet.
+	c.OnHTML(".calloutwifnba", func(e *colly.HTMLElement) {
+		fmt.Println("Section containing date:", e.Text)
+	})
+
+	// This portion no longer works.  It is from the old page and produces no output.
 	// Extract product details
 	c.OnHTML(".BigBoardMainTable", func(e *colly.HTMLElement) {
 		e.ForEach("tr", func(i int, t *colly.HTMLElement) {
