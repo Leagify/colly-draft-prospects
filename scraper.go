@@ -40,16 +40,14 @@ func main() {
 
 	//verify if the category has been reached.
 	categoryReached := false
+	ranks := make([]string, 0)
 	c.OnHTML("tr td:nth-of-type(1)", func(e *colly.HTMLElement) {
-		for _, y := range categories {
-			if e.Text == y {
-				categoryReached = true
-			}
-		}
-		if categoryReached {
-			fmt.Println("Rank:", e.Text)
-		}
+		fmt.Println(e.Text)
+		rank := e.Text
+		ranks = append(ranks, rank)
+		writer.Write([]string{rank})
 	})
+	fmt.Println("ranks contains:", ranks)
 
 	categoryReached = false
 	c.OnHTML("tr td:nth-of-type(2)", func(e *colly.HTMLElement) {
@@ -174,6 +172,9 @@ func main() {
 	})
 
 	c.Visit("https://www.drafttek.com/Top-100-NFL-Draft-Prospects-2019.asp")
+	c.Visit("https://www.drafttek.com/Top-100-NFL-Draft-Prospects-2019-Page-2.asp")
+	c.Visit("https://www.drafttek.com/Top-100-NFL-Draft-Prospects-2019-Page-3.asp")
+	//c.Visit("https://www.drafttek.com/Top-100-NFL-Draft-Prospects-2019-Page-4.asp")
 
 	log.Printf("Scraping finished, check file %q for results\n", fName)
 
