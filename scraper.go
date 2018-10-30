@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"strings"
 	"time"
 
 	"github.com/gocolly/colly"
@@ -22,17 +23,13 @@ func main() {
 	writer := csv.NewWriter(file)
 	defer writer.Flush()
 	// Write CSV header
-	writer.Write([]string{"Rank", "Change", "Name", "School", "Pos1", "Pos2", "Height", "Weight"}) // "Position" removed at the moment.
-	// TODO: scrape date from top right of page.  Looks like it's in an unnamed <p> element.
+	writer.Write([]string{"Rank", "Name", "School", "Pos1", "Pos2", "Height", "Weight", "Change", "Date"})
+	// TODO: scrape date from page.
 
 	// Instantiate default collector
 	c := colly.NewCollector(
 		colly.AllowedDomains("www.drafttek.com"),
 	)
-
-	// Categories: Rk,Chg,Player,College,P1,Ht,Wt,P2,Dif,BIO,SCT
-	categories := [11]string{"Rk", "Chg", "Player", "College", "P1", "Ht", "Wt", "P2", "Dif", "BIO", "SCT"}
-	fmt.Println(categories)
 
 	// I'm getting some garbage data at the beginning of the table rows, as it appears that there are multiple tables.
 	// I need to either figure out a way to ignore the first table or ignore input until the text matches one of the category headers above.
@@ -43,77 +40,139 @@ func main() {
 
 	ranks := make([]string, 0)
 	c.OnHTML("tr td:nth-of-type(1)", func(e *colly.HTMLElement) {
-		fmt.Println(e.Text)
 		rank := e.Text
 		ranks = append(ranks, rank)
 	})
 
 	changes := make([]string, 0)
 	c.OnHTML("tr td:nth-of-type(2)", func(e *colly.HTMLElement) {
-		fmt.Println(e.Text)
-		change := e.Text
+		change := strings.TrimSpace(e.Text)
 		changes = append(changes, change)
 	})
 
 	names := make([]string, 0)
 	c.OnHTML("tr td:nth-of-type(3)", func(e *colly.HTMLElement) {
-		fmt.Println(e.Text)
 		name := e.Text
 		names = append(names, name)
 	})
 
 	schools := make([]string, 0)
 	c.OnHTML("tr td:nth-of-type(4)", func(e *colly.HTMLElement) {
-		fmt.Println(e.Text)
 		school := e.Text
 		schools = append(schools, school)
 	})
 
 	pos1s := make([]string, 0)
 	c.OnHTML("tr td:nth-of-type(5)", func(e *colly.HTMLElement) {
-		fmt.Println(e.Text)
 		pos1 := e.Text
 		pos1s = append(pos1s, pos1)
 	})
 
 	heights := make([]string, 0)
 	c.OnHTML("tr td:nth-of-type(6)", func(e *colly.HTMLElement) {
-		fmt.Println(e.Text)
-		height := e.Text
+		height := strings.Replace(e.Text, "\"", "", -1)
 		heights = append(heights, height)
 	})
 
 	weights := make([]string, 0)
 	c.OnHTML("tr td:nth-of-type(7)", func(e *colly.HTMLElement) {
-		fmt.Println(e.Text)
 		weight := e.Text
 		weights = append(weights, weight)
 	})
 
 	pos2s := make([]string, 0)
 	c.OnHTML("tr td:nth-of-type(8)", func(e *colly.HTMLElement) {
-		fmt.Println(e.Text)
 		pos2 := e.Text
 		pos2s = append(pos2s, pos2)
 	})
 
 	c.OnHTML("html", func(e *colly.HTMLElement) {
-		fmt.Println("html here - no goquery")
+		//fmt.Println("html here - no goquery")
 		//fmt.Println(e.Text)
+		// Categories: Rk,Chg,Player,College,P1,Ht,Wt,P2,Dif,BIO,SCT
+		// ranks cleanup
 		fmt.Println("ranks length:", len(ranks))
-		ranksDataStart := Find(ranks, "Rk")
-		fmt.Println("actual data starts at", ranksDataStart)
-		ranksDataStart += 1
-		fmt.Println("first rank value is", ranks[ranksDataStart])
-		fmt.Println("changes length:", len(changes))
+		dataStart := Find(ranks, "Rk")
+		dataStart += 1
+		cleanRanks := ranks[dataStart:]
+		fmt.Println("ranks length after cleanup:", len(cleanRanks))
+
+		//changes cleanup
+		fmt.Println("changes length before cleanup:", len(changes))
+		dataStart = Find(changes, "Chg")
+		dataStart += 1
+		cleanChanges := changes[dataStart:]
+		fmt.Println("changes length after cleanup:", len(cleanChanges))
+
+		// Names cleanup
 		fmt.Println("names length:", len(names))
+		dataStart = Find(names, "Player")
+		dataStart += 1
+		cleanNames := names[dataStart:]
+		fmt.Println("names length after cleanup:", len(cleanNames))
+
+		// Schools cleanup
 		fmt.Println("schools length:", len(schools))
+		dataStart = Find(schools, "College")
+		dataStart += 1
+		cleanSchools := schools[dataStart:]
+		fmt.Println("Schools length after cleanup:", len(cleanSchools))
+
+		// Positions cleanup (both primary and alternate positions)
 		fmt.Println("pos1 length:", len(pos1s))
-		fmt.Println("heights length:", len(heights))
-		fmt.Println("weights length:", len(weights))
+		dataStart = Find(pos1s, "P1")
+		dataStart += 1
+		cleanPos1s := pos1s[dataStart:]
+		fmt.Println("Pos1 length after cleanup:", len(cleanPos1s))
+
 		fmt.Println("pos2 length:", len(pos2s))
+		dataStart = Find(pos2s, "P2")
+		dataStart += 1
+		cleanPos2s := pos2s[dataStart:]
+		fmt.Println("Pos2 length after cleanup:", len(cleanPos2s))
+
+		// Height/Weight cleanup
+		fmt.Println("heights length:", len(heights))
+		dataStart = Find(heights, "Ht")
+		dataStart += 1
+		cleanHeights := heights[dataStart:]
+		fmt.Println("Heights length after cleanup:", len(cleanHeights))
+
+		fmt.Println("weights length:", len(weights))
+		dataStart = Find(weights, "Wt")
+		dataStart += 1
+		cleanWeights := weights[dataStart:]
+		fmt.Println("Weights length after cleanup:", len(cleanWeights))
+
+		fmt.Println("Sample athlete:", cleanRanks[0], cleanChanges[0], cleanNames[0], cleanSchools[0],
+			cleanPos1s[0], cleanPos2s[0], cleanHeights[0], cleanWeights[0])
+
+		// Actually write the data to the CSV.
+		//"Rank", "Name", "School", "Pos1", "Pos2", "Height", "Weight", "Change", "Date"
+		for i, rank := range cleanRanks {
+			writer.Write([]string{
+				rank,
+				cleanNames[i],
+				cleanSchools[i],
+				cleanPos1s[i],
+				cleanPos2s[i],
+				cleanHeights[i],
+				cleanWeights[i],
+				cleanChanges[i],
+				currentDate,
+			})
+		}
+
 		// These slices keep getting larger, so they'll probably need to be blanked out
 		// before the next page is scraped.
+		ranks = nil
+		changes = nil
+		names = nil
+		schools = nil
+		pos1s = nil
+		pos2s = nil
+		heights = nil
+		weights = nil
 	})
 
 	// There's a div called "calloutwifnba" and the date. I can't seem to access it yet.
