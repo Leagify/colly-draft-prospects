@@ -38,6 +38,11 @@ func main() {
 	// I'm getting some garbage data at the beginning of the table rows, as it appears that there are multiple tables.
 	// I need to either figure out a way to ignore the first table or ignore input until the text matches one of the category headers above.
 
+	c.OnHTML("html", func(e *colly.HTMLElement) {
+		fmt.Println("html here - no goquery")
+		fmt.Println(e.Text)
+	})
+
 	//verify if the category has been reached.
 	categoryReached := false
 	ranks := make([]string, 0)
@@ -46,6 +51,7 @@ func main() {
 		rank := e.Text
 		ranks = append(ranks, rank)
 		writer.Write([]string{rank})
+
 	})
 	fmt.Println("ranks contains:", ranks)
 
