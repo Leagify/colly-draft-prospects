@@ -176,42 +176,10 @@ func main() {
 	})
 
 	// There's a div called "calloutwifnba" and the date. I can't seem to access it yet.
-	c.OnHTML("calloutwifnba", func(e *colly.HTMLElement) {
+	c.OnHTML("html body div#outer div#wrapper div#content div#calloutwifnba strong", func(e *colly.HTMLElement) {
 		fmt.Println("Section containing date:", e.Text)
+		// This actually works now, just need to get substring inside () and convert date.
 	})
-
-	// This portion no longer works.  It is from the old page and produces no output.
-	// Extract product details
-	// c.OnHTML(".BigBoardMainTable", func(e *colly.HTMLElement) {
-	// 	e.ForEach("tr", func(i int, t *colly.HTMLElement) {
-	// 		rank := t.ChildText("td.BigBoardTable2.boldplayerlabel")
-	// 		name := t.ChildText("span.boldplayerlabel")
-	// 		// I can only get the school by getting player name and school as concatenated text.  Annoying.
-	// 		nameSchool := t.ChildText("td.BigBoardTable.playername")
-	// 		nameIndex := strings.LastIndex(nameSchool, name)
-	// 		nameIndex += len(name)
-	// 		nameRunes := []rune(nameSchool)
-	// 		school := string(nameRunes[nameIndex:])
-	// 		// Position logic.  May be re-added at later time, as it doesn't work with multi-position prospects.
-	// 		//pos := t.ChildText("td.BigBoardTable2.stats20")
-	// 		//posIndex := strings.LastIndex(pos, "\n")
-	// 		//altIndex := strings.Index(pos, " ")
-	// 		//positionRunes := []rune(pos)
-	// 		//playerPosition := ""
-	// 		//if posIndex != -1 {
-	// 		//	playerPosition = string(positionRunes[:posIndex])
-	// 		//	playerPosition = strings.TrimRight(playerPosition, "\n\t")
-	// 		//}
-	// 		if len(name) > 0 {
-	// 			writer.Write([]string{
-	// 				rank,
-	// 				name,
-	// 				school,
-	// 				//playerPosition,
-	// 			})
-	// 		}
-	// 	})
-	// })
 
 	c.Visit("https://www.drafttek.com/Top-100-NFL-Draft-Prospects-2019.asp")
 	c.Visit("https://www.drafttek.com/Top-100-NFL-Draft-Prospects-2019-Page-2.asp")
