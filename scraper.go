@@ -31,13 +31,7 @@ func main() {
 		colly.AllowedDomains("www.drafttek.com"),
 	)
 
-	// I'm getting some garbage data at the beginning of the table rows, as it appears that there are multiple tables.
-	// I need to either figure out a way to ignore the first table or ignore input until the text matches one of the category headers above.
-
-	c.OnHTML("tbody tr", func(e *colly.HTMLElement) {
-		//fmt.Println("this may be the second table")
-	})
-
+	// Get input from table columns, garbage data is at the beginning. It will be filtered later.
 	ranks := make([]string, 0)
 	c.OnHTML("tr td:nth-of-type(1)", func(e *colly.HTMLElement) {
 		rank := e.Text
@@ -86,8 +80,8 @@ func main() {
 		pos2s = append(pos2s, pos2)
 	})
 
-	var updatedDate string = ""
-	// There's a div called "calloutwifnba" and the date. I can't seem to access it yet.
+	var updatedDate string
+	// There's a div called "calloutwifnba" and the date.
 	c.OnHTML("html body div#outer div#wrapper div#content div#calloutwifnba strong", func(e *colly.HTMLElement) {
 		runes := []rune(e.Text)
 
@@ -116,61 +110,59 @@ func main() {
 		// ranks cleanup
 		fmt.Println("ranks length:", len(ranks))
 		dataStart := Find(ranks, "Rk")
-		dataStart += 1
+		dataStart++
 		cleanRanks := ranks[dataStart:]
 		fmt.Println("ranks length after cleanup:", len(cleanRanks))
 
 		//changes cleanup
 		fmt.Println("changes length before cleanup:", len(changes))
 		dataStart = Find(changes, "Chg")
-		dataStart += 1
+		dataStart++
 		cleanChanges := changes[dataStart:]
 		fmt.Println("changes length after cleanup:", len(cleanChanges))
 
 		// Names cleanup
 		fmt.Println("names length:", len(names))
 		dataStart = Find(names, "Player")
-		dataStart += 1
+		dataStart++
 		cleanNames := names[dataStart:]
 		fmt.Println("names length after cleanup:", len(cleanNames))
 
 		// Schools cleanup
 		fmt.Println("schools length:", len(schools))
 		dataStart = Find(schools, "College")
-		dataStart += 1
+		dataStart++
 		cleanSchools := schools[dataStart:]
 		fmt.Println("Schools length after cleanup:", len(cleanSchools))
 
 		// Positions cleanup (both primary and alternate positions)
 		fmt.Println("pos1 length:", len(pos1s))
 		dataStart = Find(pos1s, "P1")
-		dataStart += 1
+		dataStart++
 		cleanPos1s := pos1s[dataStart:]
 		fmt.Println("Pos1 length after cleanup:", len(cleanPos1s))
 
 		fmt.Println("pos2 length:", len(pos2s))
 		dataStart = Find(pos2s, "P2")
-		dataStart += 1
+		dataStart++
 		cleanPos2s := pos2s[dataStart:]
 		fmt.Println("Pos2 length after cleanup:", len(cleanPos2s))
 
 		// Height/Weight cleanup
 		fmt.Println("heights length:", len(heights))
 		dataStart = Find(heights, "Ht")
-		dataStart += 1
+		dataStart++
 		cleanHeights := heights[dataStart:]
 		fmt.Println("Heights length after cleanup:", len(cleanHeights))
 
 		fmt.Println("weights length:", len(weights))
 		dataStart = Find(weights, "Wt")
-		dataStart += 1
+		dataStart++
 		cleanWeights := weights[dataStart:]
 		fmt.Println("Weights length after cleanup:", len(cleanWeights))
 
 		fmt.Println("Sample athlete:", cleanRanks[0], cleanChanges[0], cleanNames[0], cleanSchools[0],
 			cleanPos1s[0], cleanPos2s[0], cleanHeights[0], cleanWeights[0])
-
-
 
 		// Actually write the data to the CSV.
 		//"Rank", "Name", "School", "Pos1", "Pos2", "Height", "Weight", "Change", "Date"
