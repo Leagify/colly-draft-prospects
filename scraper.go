@@ -86,6 +86,29 @@ func main() {
 		pos2s = append(pos2s, pos2)
 	})
 
+	var updatedDate string = ""
+	// There's a div called "calloutwifnba" and the date. I can't seem to access it yet.
+	c.OnHTML("html body div#outer div#wrapper div#content div#calloutwifnba strong", func(e *colly.HTMLElement) {
+		runes := []rune(e.Text)
+
+		// Expect date between parenthesis
+		startIndex := strings.Index(e.Text, "(")
+		endIndex := strings.Index(e.Text, ")")
+
+		// Extract date
+		date := string(runes[startIndex:endIndex])
+
+		// Extracted date should be in this form
+		const dateForm = "(January 02, 2006"
+
+		// Parse into time type
+		t, _ := time.Parse(dateForm, date)
+
+		updatedDate = t.Format("2006-01-02")
+
+		fmt.Println("Section containing date:", t.Format("2006-01-02"))
+	})
+
 	c.OnHTML("html", func(e *colly.HTMLElement) {
 		//fmt.Println("html here - no goquery")
 		//fmt.Println(e.Text)
@@ -147,6 +170,8 @@ func main() {
 		fmt.Println("Sample athlete:", cleanRanks[0], cleanChanges[0], cleanNames[0], cleanSchools[0],
 			cleanPos1s[0], cleanPos2s[0], cleanHeights[0], cleanWeights[0])
 
+
+
 		// Actually write the data to the CSV.
 		//"Rank", "Name", "School", "Pos1", "Pos2", "Height", "Weight", "Change", "Date"
 		for i, rank := range cleanRanks {
@@ -159,7 +184,7 @@ func main() {
 				cleanHeights[i],
 				cleanWeights[i],
 				cleanChanges[i],
-				currentDate,
+				updatedDate,
 			})
 		}
 
@@ -173,12 +198,6 @@ func main() {
 		pos2s = nil
 		heights = nil
 		weights = nil
-	})
-
-	// There's a div called "calloutwifnba" and the date. I can't seem to access it yet.
-	c.OnHTML("html body div#outer div#wrapper div#content div#calloutwifnba strong", func(e *colly.HTMLElement) {
-		fmt.Println("Section containing date:", e.Text)
-		// This actually works now, just need to get substring inside () and convert date.
 	})
 
 	c.Visit("https://www.drafttek.com/Top-100-NFL-Draft-Prospects-2019.asp")
