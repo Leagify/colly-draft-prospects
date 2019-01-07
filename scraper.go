@@ -195,7 +195,7 @@ func main() {
 	c.Visit("https://www.drafttek.com/Top-100-NFL-Draft-Prospects-2019.asp")
 	c.Visit("https://www.drafttek.com/Top-100-NFL-Draft-Prospects-2019-Page-2.asp")
 	c.Visit("https://www.drafttek.com/Top-100-NFL-Draft-Prospects-2019-Page-3.asp")
-	//c.Visit("https://www.drafttek.com/Top-100-NFL-Draft-Prospects-2019-Page-4.asp")
+	c.Visit("https://www.drafttek.com/Top-100-NFL-Draft-Prospects-2019-Page-4.asp")
 
 	log.Printf("Scraping finished, check file %q for results\n", fName)
 
