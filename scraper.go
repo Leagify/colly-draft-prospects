@@ -12,7 +12,9 @@ import (
 )
 
 func main() {
-	currentDate := time.Now().Format("2006-01-02")
+	ucd := time.Now()
+	roundedCurrentDate := time.Date(ucd.Year(), ucd.Month(), ucd.Day(), 0, 0, 0, 0, ucd.Location())
+	currentDate := roundedCurrentDate.Format("2006-01-02")
 	fName := "draft-prospects-" + currentDate + ".csv"
 	file, err := os.Create(fName)
 	if err != nil {
@@ -86,21 +88,26 @@ func main() {
 		runes := []rune(e.Text)
 
 		// Expect date between parenthesis
-		startIndex := strings.Index(e.Text, "(")
+		startIndex := strings.Index(e.Text, "(") + 1
 		endIndex := strings.Index(e.Text, ")")
 
 		// Extract date
 		date := string(runes[startIndex:endIndex])
 
 		// Extracted date should be in this form
-		const dateForm = "(January 02, 2006"
+		const dateForm = "January 2, 2006"
 
 		// Parse into time type
-		t, _ := time.Parse(dateForm, date)
+		t, err := time.Parse(dateForm, date)
 
-		updatedDate = t.Format("2006-01-02")
+		updatedDate := time.Date(t.Year(), t.Month(), t.Day(), 0, 0, 0, 0, t.Location()).Format("2006-01-02")
 
-		fmt.Println("Section containing date:", t.Format("2006-01-02"))
+		parseError := err != nil
+
+		fmt.Println("Unformatted string to convert:", date)
+		fmt.Println("Converted date:", updatedDate)
+		fmt.Println("Current Date:", currentDate)
+		fmt.Println("Parsing errors?:", parseError, err)
 	})
 
 	c.OnHTML("html", func(e *colly.HTMLElement) {
