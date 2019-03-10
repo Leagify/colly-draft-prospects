@@ -100,13 +100,16 @@ func main() {
 		// Parse into time type
 		t, err := time.Parse(dateForm, date)
 
-		updatedDate := time.Date(t.Year(), t.Month(), t.Day(), 0, 0, 0, 0, t.Location()).Format("2006-01-02")
+		updatedDate := time.Date(t.Year(), t.Month(), t.Day(), 0, 0, 0, 0, ucd.Location()).Format("2006-01-02")
 
 		parseError := err != nil
+
+		datesMatch := currentDate == updatedDate
 
 		fmt.Println("Unformatted string to convert:", date)
 		fmt.Println("Converted date:", updatedDate)
 		fmt.Println("Current Date:", currentDate)
+		fmt.Println("Dates match?:", datesMatch)
 		fmt.Println("Parsing errors?:", parseError, err)
 	})
 
