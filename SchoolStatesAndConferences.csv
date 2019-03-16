@@ -1,0 +1,665 @@
+School,Conference,State
+Memphis,FBS - AAC,Tennessee
+Cincinnati,FBS - AAC,Ohio
+UCF,FBS - AAC,Florida
+East Carolina,FBS - AAC,North Carolina
+Houston,FBS - AAC,Texas
+Temple,FBS - AAC,Pennsylvania
+South Florida,FBS - AAC,Florida
+Tulane,FBS - AAC,Louisiana
+Tulsa,FBS - AAC,Oklahoma
+SMU,FBS - AAC,Texas
+Connecticut,FBS - AAC,Connecticut
+Navy,FBS - AAC,Maryland
+Florida State,ACC,Florida
+Clemson,ACC,South Carolina
+Louisville,ACC,Kentucky
+Boston College,ACC,Massachusetts
+NC State,ACC,North Carolina
+Wake Forest,ACC,North Carolina
+Syracuse,ACC,New York
+Georgia Tech,ACC,Georgia
+Duke,ACC,North Carolina
+North Carolina,ACC,North Carolina
+Pitt,ACC,Pennsylvania
+Virginia Tech,ACC,Virginia
+Miami (FL),ACC,Florida
+Virginia,ACC,Virginia
+Baylor,Big 12,Texas
+TCU,Big 12,Texas
+Kansas State,Big 12,Kansas
+Oklahoma,Big 12,Oklahoma
+Texas,Big 12,Texas
+West Virginia,Big 12,West Virginia
+Oklahoma State,Big 12,Oklahoma
+Texas Tech,Big 12,Texas
+Kansas,Big 12,Kansas
+Iowa State,Big 12,Iowa
+Ohio State,Big Ten,Ohio
+Michigan State,Big Ten,Michigan
+Maryland,Big Ten,Maryland
+Rutgers,Big Ten,New Jersey
+Michigan,Big Ten,Michigan
+Penn State,Big Ten,Pennsylvania
+Indiana,Big Ten,Indiana
+Wisconsin,Big Ten,Wisconsin
+Minnesota,Big Ten,Minnesota
+Nebraska,Big Ten,Nebraska
+Iowa,Big Ten,Iowa
+Illinois,Big Ten,Illinois
+Northwestern,Big Ten,Illinois
+Purdue,Big Ten,Indiana
+Oregon,Pac 12,Oregon
+Stanford,Pac 12,California
+Washington,Pac 12,Washington
+California,Pac 12,California
+Washington State,Pac 12,Washington
+Oregon State,Pac 12,Oregon
+Arizona,Pac 12,Arizona
+UCLA,Pac 12,California
+Arizona State,Pac 12,Arizona
+USC,Pac 12,California
+Utah,Pac 12,Utah
+Colorado,Pac 12,Colorado
+Missouri,SEC,Missouri
+Georgia,SEC,Georgia
+Florida,SEC,Florida
+Tennessee,SEC,Tennessee
+South Carolina,SEC,South Carolina
+Kentucky,SEC,Kentucky
+Vanderbilt,SEC,Tennessee
+Alabama,SEC,Alabama
+Mississippi State,SEC,Mississippi
+Ole Miss,SEC,Mississippi
+Auburn,SEC,Alabama
+LSU,SEC,Louisiana
+Texas A&M,SEC,Texas
+Arkansas,SEC,Arkansas
+Fresno State,FBS - Mountain West,California
+San Diego State,FBS - Mountain West,California
+Nevada,FBS - Mountain West,Nevada
+Hawaii,FBS - Mountain West,Hawaii
+San Jose State,FBS - Mountain West,California
+UNLV,FBS - Mountain West,Nevada
+Boise State,FBS - Mountain West,Idaho
+Colorado State,FBS - Mountain West,Colorado
+Utah State,FBS - Mountain West,Utah
+Air Force,FBS - Mountain West,Colorado
+New Mexico,FBS - Mountain West,New Mexico
+Wyoming,FBS - Mountain West,Wyoming
+Notre Dame,FBS - Independent,Indiana
+BYU,FBS - Independent,Utah
+Army,FBS - Independent,Kansas
+Marshall,FBS - CUSA,West Virginia
+Middle Tennessee,FBS - CUSA,Tennessee
+UAB,FBS - CUSA,Alabama
+Western Kentucky,FBS - CUSA,Kentucky
+Old Dominion,FBS - CUSA,Virginia
+Florida International,FBS - CUSA,Florida
+Florida Atlantic,FBS - CUSA,Florida
+Charlotte,FBS - CUSA,North Carolina
+Louisiana Tech,FBS - CUSA,Louisiana
+Rice,FBS - CUSA,Texas
+UTEP,FBS - CUSA,Texas
+UTSA,FBS - CUSA,Texas
+North Texas,FBS - CUSA,Texas
+Southern Miss,FBS - CUSA,Mississippi
+Bowling Green,FBS - MAC,Ohio
+Ohio,FBS - MAC,Ohio
+Buffalo,FBS - MAC,New York
+Akron,FBS - MAC,Ohio
+Massachusetts,FBS - MAC,Massachusetts
+Miami (OH),FBS - MAC,Ohio
+Kent State,FBS - MAC,Ohio
+Northern Illinois,FBS - MAC,Illinois
+Toledo,FBS - MAC,Ohio
+Western Michigan,FBS - MAC,Michigan
+Central Michigan,FBS - MAC,Michigan
+Ball State,FBS - MAC,Indiana
+Eastern Michigan,FBS - MAC,Michigan
+Georgia Southern,FBS - Sun Belt,Georgia
+Louisiana-Lafayette,FBS - Sun Belt,Louisiana
+Appalachian State,FBS - Sun Belt,North Carolina
+Texas State,FBS - Sun Belt,Texas
+Arkansas State,FBS - Sun Belt,Arkansas
+South Alabama,FBS - Sun Belt,Alabama
+Louisiana-Monroe,FBS - Sun Belt,Louisiana
+Troy,FBS - Sun Belt,Alabama
+New Mexico State,FBS - Sun Belt,New Mexico
+Idaho,FBS - Sun Belt,Idaho
+Georgia State,FBS - Sun Belt,Georgia
+Abilene Christian,FCS,Texas
+Alabama A&M,FCS,Alabama
+Alabama State,FCS,Alabama
+Albany,FCS,New York
+Alcorn State,FCS,Mississippi
+Arkansas-Pine Bluff,FCS,Arkansas
+Austin Peay,FCS,Tennessee
+Bethune-Cookman,FCS,Florida
+Brown,FCS,Rhode Island
+Bryant,FCS,Rhode Island
+Bucknell,FCS,Pennsylvania
+Butler,FCS,Indiana
+Cal Poly,FCS,California
+Campbell,FCS,North Carolina
+Central Arkansas,FCS,Arkansas
+Central Connecticut State,FCS,Connecticut
+Charleston Southern,FCS,South Carolina
+Chattanooga,FCS,Tennessee
+The Citadel,FCS,South Carolina
+Coastal Carolina,FCS,South Carolina
+Colgate,FCS,New York
+Columbia,FCS,New York
+Cornell,FCS,New York
+Dartmouth,FCS,New Hampshire
+Davidson,FCS,North Carolina
+Dayton,FCS,Ohio
+Delaware,FCS,Delaware
+Delaware State,FCS,Delaware
+Drake,FCS,Iowa
+Duquesne,FCS,Pennsylvania
+Eastern Illinois,FCS,Illinois
+Eastern Kentucky,FCS,Kentucky
+Eastern Washington,FCS,Washington
+Elon,FCS,North Carolina
+Florida A&M,FCS,Florida
+Fordham,FCS,New York
+Furman,FCS,South Carolina
+Gardner–Webb,FCS,North Carolina
+Georgetown,FCS,Washington DC
+Grambling State,FCS,Louisiana
+Hampton,FCS,Virginia
+Harvard,FCS,Massachusetts
+Holy Cross,FCS,Massachusetts
+Houston Baptist,FCS,Texas
+Howard,FCS,Washington DC
+Idaho State,FCS,Idaho
+Illinois State,FCS,Illinois
+Incarnate Word,FCS,Texas
+Indiana State,FCS,Indiana
+Jackson State,FCS,Mississippi
+Jacksonville,FCS,Florida
+Jacksonville State,FCS,Alabama
+James Madison,FCS,Virginia
+Lafayette,FCS,Pennsylvania
+Lamar,FCS,Texas
+Lehigh,FCS,Pennsylvania
+Liberty,FCS,Virginia
+Maine,FCS,Maine
+McNeese State,FCS,Louisiana
+Mercer,FCS,Georgia
+Mississippi Valley State,FCS,Mississippi
+Missouri State,FCS,Missouri
+Monmouth,FCS,New Jersey
+Montana,FCS,Montana
+Montana State,FCS,Montana
+Morehead State,FCS,Kentucky
+Morgan State,FCS,Maryland
+Murray State,FCS,Kentucky
+New Hampshire,FCS,New Hampshire
+Nicholls State,FCS,Louisiana
+Norfolk State,FCS,Virginia
+North Carolina A&T,FCS,North Carolina
+North Carolina Central,FCS,North Carolina
+North Dakota,FCS,North Dakota
+North Dakota State,FCS,North Dakota
+Northern Arizona,FCS,Arizona
+Northern Colorado,FCS,Colorado
+Northern Iowa,FCS,Iowa
+Northwestern State,FCS,Louisiana
+Pennsylvania,FCS,Pennsylvania
+Portland State,FCS,Oregon
+Prairie View A&M,FCS,Texas
+Presbyterian,FCS,South Carolina
+Princeton,FCS,New Jersey
+Rhode Island,FCS,Rhode Island
+Richmond,FCS,Virginia
+Robert Morris,FCS,Pennsylvania
+Sacramento State,FCS,California
+Sacred Heart,FCS,Connecticut
+Saint Francis,FCS,Pennsylvania
+Sam Houston State,FCS,Texas
+Samford,FCS,Alabama
+San Diego,FCS,California
+Savannah State,FCS,Georgia
+South Carolina State,FCS,South Carolina
+South Dakota,FCS,South Dakota
+South Dakota State,FCS,South Dakota
+Southeast Missouri State,FCS,Missouri
+Southeastern Louisiana,FCS,Louisiana
+Southern,FCS,Louisiana
+Southern Illinois,FCS,Illinois
+Southern Utah,FCS,Utah
+Stephen F. Austin,FCS,Texas
+Stetson,FCS,Florida
+Stony Brook,FCS,New York
+Tennessee State,FCS,Tennessee
+Tennessee Tech,FCS,Tennessee
+Texas Southern,FCS,Texas
+Towson,FCS,Maryland
+UC Davis,FCS,California
+UT Martin,FCS,Tennessee
+Valparaiso,FCS,Indiana
+Villanova,FCS,Pennsylvania
+VMI,FCS,Virginia
+Wagner,FCS,New York
+Weber State,FCS,Utah
+Western Carolina,FCS,North Carolina
+Western Illinois,FCS,Illinois
+William & Mary,FCS,Virginia
+Wofford,FCS,South Carolina
+Yale,FCS,Connecticut
+Youngstown State,FCS,Ohio
+Adams State,D2,Colorado
+Albany State,D2,Georgia
+Alderson Broaddus,D2,West Virginia
+American International College,D2,Massachusetts
+Angelo State,D2,Texas
+Arkansas Tech,D2,Arkansas
+Arkansas–Monticello,D2,Arkansas
+Ashland,D2,Ohio
+Assumption College,D2,Massachusetts
+Augustana College,D2,South Dakota
+Azusa Pacific,D2,California
+Bemidji State,D2,Minnesota
+Benedict College,D2,South Carolina
+Bentley,D2,Massachusetts
+Black Hills State,D2,South Dakota
+Bloomsburg,D2,Pennsylvania
+Bowie State,D2,Maryland
+Brevard College,D2,North Carolina
+Carson–Newman,D2,Tennessee
+Catawba College,D2,North Carolina
+Central Missouri,D2,Missouri
+Central Oklahoma,D2,Oklahoma
+Central State,D2,Ohio
+Central Washington,D2,Washington
+Chadron State College,D2,Nebraska
+Charleston,D2,West Virginia
+Cheyney,D2,Pennsylvania
+Chowan,D2,North Carolina
+Clarion,D2,Pennsylvania
+Clark Atlanta,D2,Georgia
+Colorado Mesa,D2,Colorado
+Colorado Mines,D2,Colorado
+Colorado State–Pueblo,D2,Colorado
+Concord,D2,West Virginia
+Concordia–St. Paul,D2,Minnesota
+Delta State,D2,Mississippi
+Dixie State,D2,Utah
+East Central,D2,Oklahoma
+East Stroudsburg,D2,Pennsylvania
+Eastern New Mexico,D2,New Mexico
+Edinboro,D2,Pennsylvania
+Elizabeth City State,D2,North Carolina
+Emporia State,D2,Kansas
+Fairmont State,D2,West Virginia
+Fayetteville State,D2,North Carolina
+Ferris State,D2,Michigan
+Findlay,D2,Ohio
+Florida Tech,D2,Florida
+Fort Hays State,D2,Kansas
+Fort Lewis College,D2,Colorado
+Fort Valley State,D2,Georgia
+Gannon,D2,Pennsylvania
+Glenville State College,D2,West Virginia
+Grand Valley State,D2,Michigan
+Harding,D2,Arkansas
+Henderson State,D2,Arkansas
+Hillsdale College,D2,Michigan
+Humboldt State,D2,California
+Indianapolis,D2,Indiana
+Indiana (PA),D2,Pennsylvania
+Johnson C. Smith,D2,North Carolina
+Kentucky State,D2,Kentucky
+Kentucky Wesleyan College,D2,Kentucky
+Kutztown,D2,Pennsylvania
+Lake Erie College,D2,Ohio
+Lane College,D2,Tennessee
+Lenoir–Rhyne,D2,North Carolina
+Limestone College,D2,South Carolina
+Lincoln (MO),D2,Missouri
+Lincoln (PA),D2,Pennsylvania
+Lindenwood,D2,Missouri
+Livingstone College,D2,North Carolina
+Lock Haven,D2,Pennsylvania
+Long Island–Post,D2,New York
+Malone,D2,Ohio
+Mars Hill College,D2,North Carolina
+Mary,D2,North Dakota
+McKendree,D2,Illinois
+McMurry,D2,Texas
+Mercyhurst,D2,Pennsylvania
+Merrimack College,D2,Massachusetts
+Michigan Tech,D2,Michigan
+Midwestern State,D2,Texas
+Miles College,D2,Alabama
+Millersville,D2,Pennsylvania
+Minnesota State–Mankato,D2,Minnesota
+Minnesota State–Moorhead,D2,Minnesota
+Minnesota–Crookston,D2,Minnesota
+Minnesota–Duluth,D2,Minnesota
+Minot State,D2,North Dakota
+Mississippi College,D2,Mississippi
+Missouri S&T,D2,Missouri
+Missouri Southern State,D2,Missouri
+Missouri Western State,D2,Missouri
+Morehouse College,D2,Georgia
+Nebraska–Kearney,D2,Nebraska
+New Haven,D2,Connecticut
+New Mexico Highlands,D2,New Mexico
+Newberry College,D2,South Carolina
+North Alabama,D2,Alabama
+North Carolina–Pembroke,D2,North Carolina
+North Greenville,D2,South Carolina
+Northeastern State,D2,Oklahoma
+Northern Michigan,D2,Michigan
+Northern State,D2,South Dakota
+Northwest Missouri State,D2,Missouri
+Northwestern Oklahoma State,D2,Oklahoma
+Northwood,D2,Michigan
+Notre Dame College,D2,Ohio
+Ohio Dominican,D2,Ohio
+Oklahoma Panhandle State,D2,Oklahoma
+Ouachita Baptist,D2,Arkansas
+Pace,D2,New York
+Paine College,D2,Georgia
+Pittsburg State,D2,Kansas
+Quincy,D2,Illinois
+Saginaw Valley State,D2,Michigan
+Saint Anselm College,D2,New Hampshire
+St. Augustine's,D2,North Carolina
+St. Cloud State,D2,Minnesota
+Saint Joseph's College,D2,Indiana
+Seton Hill,D2,Pennsylvania
+Shaw,D2,North Carolina
+Shepherd,D2,West Virginia
+Shippensburg,D2,Pennsylvania
+Shorter,D2,Georgia
+Simon Fraser,D2,British Columbia
+Sioux Falls,D2,South Dakota
+Slippery Rock,D2,Pennsylvania
+South Dakota Mines,D2,South Dakota
+Southeastern Oklahoma State,D2,Oklahoma
+Southern Arkansas,D2,Arkansas
+Southern Connecticut State,D2,Connecticut
+Southern Nazarene,D2,Oklahoma
+Southwest Baptist,D2,Missouri
+Southwest Minnesota State,D2,Minnesota
+Southwestern Oklahoma State,D2,Oklahoma
+Stillman College,D2,Alabama
+Stonehill College,D2,Massachusetts
+Tarleton State,D2,Texas
+Texas A&M–Commerce,D2,Texas
+Texas A&M–Kingsville,D2,Texas
+Tiffin,D2,Ohio
+Truman State,D2,Missouri
+Tusculum College,D2,Tennessee
+Tuskegee,D2,Alabama
+Upper Iowa,D2,Iowa
+Urbana,D2,Ohio
+Valdosta State,D2,Georgia
+Virginia State,D2,Virginia
+Virginia Union,D2,Virginia
+Virginia–Wise,D2,Virginia
+Walsh,D2,Ohio
+Washburn,D2,Kansas
+Wayne State,D2,Michigan
+Wayne State College,D2,Nebraska
+West Alabama,D2,Alabama
+West Chester,D2,Pennsylvania
+West Georgia,D2,Georgia
+West Liberty,D2,West Virginia
+West Texas A&M,D2,Texas
+West Virginia State,D2,West Virginia
+West Virginia Wesleyan College,D2,West Virginia
+Western New Mexico,D2,New Mexico
+Western Oregon,D2,Oregon
+Western State Colorado,D2,Colorado
+William Jewell College,D2,Missouri
+Wingate,D2,North Carolina
+Winona State,D2,Minnesota
+Winston–Salem State,D2,North Carolina
+Adrian,D3,Michigan
+Albion,D3,Michigan
+Albright,D3,Pennsylvania
+Alfred,D3,New York
+Alfred State,D3,New York
+Allegheny,D3,Pennsylvania
+Alma,D3,Michigan
+Amherst,D3,Massachusetts
+Anderson,D3,Indiana
+Anna Maria,D3,Massachusetts
+Augsburg,D3,Minnesota
+Augustana,D3,Illinois
+Aurora,D3,Illinois
+Austin,D3,Texas
+Averett,D3,Virginia
+Baldwin-Wallace,D3,Ohio
+Bates,D3,Maine
+Becker,D3,Massachusetts
+Beloit,D3,Wisconsin
+Benedictine,D3,Illinois
+Berry,D3,Georgia
+Bethany,D3,West Virginia
+Bethel,D3,Minnesota
+Birmingham-Southern,D3,Alabama
+Bluffton,D3,Ohio
+Bowdoin,D3,Maine
+Bridgewater,D3,Virginia
+Bridgewater State,D3,Massachusetts
+Brockport,D3,New York
+Buena Vista,D3,Iowa
+Buffalo State,D3,New York
+Cal Lutheran,D3,California
+Capital,D3,Ohio
+Carleton,D3,Minnesota
+Carnegie Mellon,D3,Pennsylvania
+Carroll,D3,Wisconsin
+Carthage,D3,Wisconsin
+Case Western Reserve,D3,Ohio
+Castleton,D3,Vermont
+Catholic,D3,Washington DC
+Central,D3,Iowa
+Centre,D3,Kentucky
+Chapman,D3,California
+Chicago,D3,Illinois
+Christopher Newport,D3,Virginia
+Claremont-Mudd-Scripps,D3,California
+Coast Guard,D3,Connecticut
+Coe,D3,Iowa
+Colby,D3,Maine
+College of New Jersey,D3,New Jersey
+Concordia (IL),D3,Illinois
+Concordia (MN),D3,Minnesota
+Concordia (WI),D3,Wisconsin
+Cornell College,D3,Iowa
+Cortland State,D3,New York
+Crown,D3,Minnesota
+Curry,D3,Massachusetts
+Defiance,D3,Ohio
+Delaware Valley,D3,Pennsylvania
+Denison,D3,Ohio
+DePauw,D3,Indiana
+Dickinson,D3,Pennsylvania
+Dubuque,D3,Iowa
+Earlham,D3,Indiana
+East Texas Baptist,D3,Texas
+Elmhurst,D3,Illinois
+Emory & Henry,D3,Virginia
+Endicott,D3,Massachusetts
+Eureka,D3,Illinois
+FDU-Florham,D3,New Jersey
+Ferrum,D3,Virginia
+Fitchburg State,D3,Massachusetts
+Framingham State,D3,Massachusetts
+Franklin,D3,Indiana
+Franklin & Marshall,D3,Pennsylvania
+Frostburg State,D3,Maryland
+Gallaudet University,D3,Washington DC
+Geneva College,D3,Pennsylvania
+Gettysburg,D3,Pennsylvania
+Greensboro,D3,North Carolina
+Greenville,D3,Illinois
+Grinnell,D3,Iowa
+Grove City,D3,Pennsylvania
+Guilford,D3,North Carolina
+Gustavus Adolphus,D3,Minnesota
+Hamilton,D3,New York
+Hamline,D3,Minnesota
+Hampden–Sydney,D3,Virginia
+Hanover,D3,Indiana
+Hardin–Simmons,D3,Texas
+Hartwick,D3,New York
+Heidelberg,D3,Ohio
+Hendrix,D3,Arkansas
+Hiram,D3,Ohio
+Hobart,D3,New York
+Hope,D3,Michigan
+Howard Payne,D3,Texas
+Huntingdon,D3,Alabama
+Husson,D3,Maine
+Illinois College,D3,Illinois
+Illinois Wesleyan,D3,Illinois
+Iowa Wesleyan,D3,Iowa
+Ithaca,D3,New York
+John Carroll,D3,Ohio
+Johns Hopkins,D3,Maryland
+Juniata,D3,Pennsylvania
+Kalamazoo,D3,Michigan
+Kean,D3,New Jersey
+Kenyon,D3,Ohio
+King's,D3,Pennsylvania
+Knox,D3,Illinois
+La Verne,D3,California
+LaGrange,D3,Georgia
+Lake Forest,D3,Illinois
+Lakeland College,D3,Wisconsin
+Lawrence,D3,Wisconsin
+Lebanon Valley,D3,Pennsylvania
+Lewis & Clark,D3,Oregon
+Linfield,D3,Oregon
+Loras,D3,Iowa
+Louisiana College,D3,Louisiana
+Luther,D3,Iowa
+Lycoming,D3,Pennsylvania
+Macalester,D3,Minnesota
+MacMurray,D3,Illinois
+Maine Maritime,D3,Maine
+Manchester,D3,Indiana
+Maranatha Baptist,D3,Wisconsin
+Marietta,D3,Ohio
+Martin Luther,D3,Minnesota
+Mary Hardin–Baylor,D3,Texas
+Maryville,D3,Tennessee
+Mass-Dartmouth,D3,Massachusetts
+Massachusetts Maritime,D3,Massachusetts
+McDaniel,D3,Maryland
+Merchant Marine,D3,New York
+Methodist,D3,North Carolina
+Middlebury,D3,Vermont
+Millikin,D3,Illinois
+Millsaps,D3,Mississippi
+Minnesota-Morris,D3,Minnesota
+Misericordia,D3,Pennsylvania
+Mississippi College,D3,Mississippi
+MIT,D3,Massachusetts
+Monmouth,D3,Illinois
+Montclair State,D3,New Jersey
+Moravian,D3,Pennsylvania
+Mount Ida,D3,Massachusetts
+Mount Union,D3,Ohio
+Mt. St. Joseph,D3,Ohio
+Muhlenberg,D3,Pennsylvania
+Muskingum,D3,Ohio
+Nichols,D3,Massachusetts
+North Carolina Wesleyan,D3,North Carolina
+North Central,D3,Illinois
+North Park,D3,Illinois
+Norwich,D3,Vermont
+Oberlin,D3,Ohio
+Occidental,D3,California
+Ohio Northern,D3,Ohio
+Ohio Wesleyan,D3,Ohio
+Olivet,D3,Michigan
+Otterbein,D3,Ohio
+Pacific,D3,Oregon
+Pacific Lutheran,D3,Washington
+Plymouth State,D3,New Hampshire
+Pomona-Pitzer,D3,California
+Puget Sound,D3,Washington
+Randolph–Macon,D3,Virginia
+Redlands,D3,California
+Rhodes,D3,Tennessee
+Ripon,D3,Wisconsin
+Rochester,D3,New York
+Rockford,D3,Illinois
+Rose–Hulman,D3,Indiana
+Rowan,D3,New Jersey
+RPI,D3,New York
+Salisbury,D3,Maryland
+Salve Regina,D3,Rhode Island
+Sewanee,D3,Tennessee
+Shenandoah,D3,Virginia
+Simpson,D3,Iowa
+Springfield,D3,Massachusetts
+St. John Fisher,D3,New York
+St. John's,D3,Minnesota
+St. Lawrence,D3,New York
+St. Norbert,D3,Wisconsin
+St. Olaf,D3,Minnesota
+St. Scholastica,D3,Minnesota
+Stevenson,D3,Maryland
+St. Thomas,D3,Minnesota
+St. Vincent,D3,Pennsylvania
+Southern Virginia,D3,Virginia
+Southwestern,D3,Texas
+Sul Ross State,D3,Texas
+SUNY-Maritime,D3,New York
+SUNY-Morrisville,D3,New York
+Susquehanna,D3,Pennsylvania
+Texas Lutheran,D3,Texas
+Thiel,D3,Pennsylvania
+Thomas More,D3,Kentucky
+Trine (formerly Tri-State),D3,Indiana
+Trinity (CT),D3,Connecticut
+Trinity (TX),D3,Texas
+Tufts,D3,Massachusetts
+Union,D3,New York
+Ursinus,D3,Pennsylvania
+Utica,D3,New York
+UW–Eau Claire,D3,Wisconsin
+UW–La Crosse,D3,Wisconsin
+UW–Oshkosh,D3,Wisconsin
+UW–Platteville,D3,Wisconsin
+UW–River Falls,D3,Wisconsin
+UW–Stevens Point,D3,Wisconsin
+UW–Stout,D3,Wisconsin
+UW–Whitewater,D3,Wisconsin
+Wabash,D3,Indiana
+Wartburg,D3,Iowa
+Washington & Jefferson,D3,Pennsylvania
+Washington & Lee,D3,Virginia
+Washington (MO),D3,Missouri
+Waynesburg,D3,Pennsylvania
+Wesley,D3,Delaware
+Wesleyan,D3,Connecticut
+Western Connecticut,D3,Connecticut
+Western New England,D3,Massachusetts
+Westfield State,D3,Massachusetts
+Westminster (MO),D3,Missouri
+Westminster (PA),D3,Pennsylvania
+Wheaton,D3,Illinois
+Whittier,D3,California
+Whitworth,D3,Washington
+Widener,D3,Pennsylvania
+Wilkes,D3,Pennsylvania
+Willamette,D3,Oregon
+William Paterson,D3,New Jersey
+Williams,D3,Massachusetts
+Wilmington,D3,Ohio
+Wisconsin Lutheran,D3,Wisconsin
+Wittenberg,D3,Ohio
+Wooster,D3,Ohio
+Worcester Poly,D3,Massachusetts
+Worcester State,D3,Massachusetts

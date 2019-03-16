@@ -100,7 +100,7 @@ func main() {
 		// Parse into time type
 		t, err := time.Parse(dateForm, date)
 
-		updatedDate := time.Date(t.Year(), t.Month(), t.Day(), 0, 0, 0, 0, ucd.Location()).Format("2006-01-02")
+		updatedDate = t.Format("2006-01-02")
 
 		parseError := err != nil
 
@@ -173,7 +173,7 @@ func main() {
 
 		fmt.Println("Sample athlete:", cleanRanks[0], cleanChanges[0], cleanNames[0], cleanSchools[0],
 			cleanPos1s[0], cleanPos2s[0], cleanHeights[0], cleanWeights[0])
-
+		fmt.Println("Ranks last updated:", updatedDate)
 		// Actually write the data to the CSV.
 		//"Rank", "Name", "School", "Pos1", "Pos2", "Height", "Weight", "Change", "Date"
 		for i, rank := range cleanRanks {
