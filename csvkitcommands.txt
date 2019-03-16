@@ -1,0 +1,2 @@
+csvstack draft-prospects-201*.csv > ranksOverTime.csv
+csvjoin -c School ranksOverTime.csv SchoolStatesAndConferences.csv > Leagify2019Ranks.csv

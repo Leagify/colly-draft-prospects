@@ -1,0 +1,352 @@
+[
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Anthony Johnson"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Anthony Johnson (UB)"
+      }
+    ],
+    "description": "Mass edit cells in column Name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "DeAndre Baker",
+          "Deandre Baker"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DeAndre Baker"
+      },
+      {
+        "from": [
+          "Joe Dineen Jr",
+          "Joe Dineen Jr."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Joe Dineen Jr"
+      }
+    ],
+    "description": "Mass edit cells in column Name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "School",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Texas A&M",
+          "Texas AM"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Texas A&M"
+      },
+      {
+        "from": [
+          "NC State",
+          "N.C. State"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NC State"
+      },
+      {
+        "from": [
+          "Florida Int'l",
+          "Florida Intl"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Florida International"
+      },
+      {
+        "from": [
+          "Boise St"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Boise State"
+      },
+      {
+        "from": [
+          "FIU"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Florida International"
+      },
+      {
+        "from": [
+          "Northwestern St"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Northwestern State"
+      },
+      {
+        "from": [
+          "Appalachian St"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Appalachian State"
+      },
+      {
+        "from": [
+          "North Carolina St"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NC State"
+      },
+      {
+        "from": [
+          "New Mexico St"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "New Mexico State"
+      },
+      {
+        "from": [
+          "Ohio St"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ohio State"
+      },
+      {
+        "from": [
+          "Jacksonville St"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Jacksonville State"
+      },
+      {
+        "from": [
+          "N Dakota State"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "North Dakota State"
+      },
+      {
+        "from": [
+          "Fresno St"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fresno State"
+      },
+      {
+        "from": [
+          "UMass"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Massachusetts"
+      },
+      {
+        "from": [
+          "N Dakota St"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "North Dakota State"
+      },
+      {
+        "from": [
+          "North Dakota St"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "North Dakota State"
+      },
+      {
+        "from": [
+          "W Michigan"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Western Michigan"
+      },
+      {
+        "from": [
+          "UC-Davis"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "UC Davis"
+      },
+      {
+        "from": [
+          "South Dakota St"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "South Dakota State"
+      },
+      {
+        "from": [
+          "Ohio University"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ohio"
+      },
+      {
+        "from": [
+          "C Michigan"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Central Michigan"
+      },
+      {
+        "from": [
+          "Oklahoma St"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Oklahoma State"
+      },
+      {
+        "from": [
+          "N Colorado"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Northern Colorado"
+      },
+      {
+        "from": [
+          "Georgia St"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Georgia State"
+      },
+      {
+        "from": [
+          "Texas Christian"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "TCU"
+      },
+      {
+        "from": [
+          "Michigan St"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Michigan State"
+      },
+      {
+        "from": [
+          "Florida St"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Florida State"
+      },
+      {
+        "from": [
+          "Washington St"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Washington State"
+      },
+      {
+        "from": [
+          "Penn St"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Penn State"
+      },
+      {
+        "from": [
+          "U Mass"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Massachusetts"
+      },
+      {
+        "from": [
+          "Mississippi St"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Mississippi State"
+      },
+      {
+        "from": [
+          "UNC"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "North Carolina"
+      },
+      {
+        "from": [
+          "Kansas St"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Kansas State"
+      }
+    ],
+    "description": "Mass edit cells in column School"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "School",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Colorado St",
+          "Colorado St."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Colorado State"
+      }
+    ],
+    "description": "Mass edit cells in column School"
+  }
+]
