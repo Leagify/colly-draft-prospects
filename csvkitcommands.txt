@@ -2,4 +2,5 @@ csvstack draft-prospects-201*.csv > ranksOverTime.csv
 csvjoin -c Rank ranksOverTime.csv RanksToProjectedPoints.csv > ranksWithPointsOverTime.csv
 // Perform openrefine steps from `openRefineDataMerge.json` here before joining or data will be lost in the join.
 // Also, make sure the downloaded file from openrefine is in the same directory as the others.
-csvjoin -c School ranksWithPointsOverTime-csv.csv SchoolStatesAndConferences.csv > Leagify2019Ranks.csv
+csvjoin -c School ranksWithPointsOverTime-csv.csv SchoolStatesAndConferences.csv > RanksWithStates.csv
+csvjoin -c State RanksWithStates.csv StatesToRegions.csv > Leagify2019Ranks.csv
