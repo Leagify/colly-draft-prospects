@@ -348,5 +348,85 @@
       }
     ],
     "description": "Mass edit cells in column School"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "School",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Miami"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Miami (FL)"
+      }
+    ],
+    "description": "Mass edit cells in column School"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "School",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Pittsburgh"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pitt"
+      }
+    ],
+    "description": "Mass edit cells in column School"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "School",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "San Diego St"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "San Diego State"
+      }
+    ],
+    "description": "Mass edit cells in column School"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "School",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Tesas Tech"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Texas Tech"
+      }
+    ],
+    "description": "Mass edit cells in column School"
   }
 ]
