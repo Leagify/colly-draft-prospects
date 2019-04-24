@@ -428,5 +428,85 @@
       }
     ],
     "description": "Mass edit cells in column School"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "School",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "E Michigan"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Eastern Michigan"
+      }
+    ],
+    "description": "Mass edit cells in column School"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "School",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Mississippi"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ole Miss"
+      }
+    ],
+    "description": "Mass edit cells in column School"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "School",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "UL-Lafayette"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Louisiana Lafayette"
+      }
+    ],
+    "description": "Mass edit cells in column School"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "School",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Louisiana Lafayette"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Louisiana-Lafayette"
+      }
+    ],
+    "description": "Mass edit cells in column School"
   }
 ]
